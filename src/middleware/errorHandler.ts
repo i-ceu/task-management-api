@@ -4,7 +4,6 @@ interface ErrorResponse {
     success: boolean;
     message: string;
     errors?: any;
-    stack?: string;
 }
 
 class ErrorHandler extends Error {
@@ -49,9 +48,6 @@ const errorHandler = (
         message: error.message || 'Server Error'
     };
 
-    if (process.env.NODE_ENV === 'development') {
-        response.stack = err.stack;
-    }
 
     res.status(error.statusCode || 500).json(response);
 };

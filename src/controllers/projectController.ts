@@ -3,9 +3,7 @@ import Project from '../models/Project';
 import { ErrorHandler } from '../middleware/errorHandler';
 import { AuthRequest } from '../middleware/auth';
 
-// @desc    Get all projects
-// @route   GET /api/projects
-// @access  Private
+
 export const getProjects = async (
     req: AuthRequest,
     res: Response,
@@ -53,9 +51,7 @@ export const getProjects = async (
     }
 };
 
-// @desc    Get single project
-// @route   GET /api/projects/:id
-// @access  Private
+
 export const getProject = async (
     req: AuthRequest,
     res: Response,
@@ -88,9 +84,7 @@ export const getProject = async (
     }
 };
 
-// @desc    Create new project
-// @route   POST /api/projects
-// @access  Private
+
 export const createProject = async (
     req: AuthRequest,
     res: Response,
@@ -111,9 +105,7 @@ export const createProject = async (
     }
 };
 
-// @desc    Update project
-// @route   PUT /api/projects/:id
-// @access  Private
+
 export const updateProject = async (
     req: AuthRequest,
     res: Response,
@@ -151,9 +143,7 @@ export const updateProject = async (
     }
 };
 
-// @desc    Delete project
-// @route   DELETE /api/projects/:id
-// @access  Private
+
 export const deleteProject = async (
     req: AuthRequest,
     res: Response,
@@ -188,9 +178,7 @@ export const deleteProject = async (
     }
 };
 
-// @desc    Get project statistics
-// @route   GET /api/projects/:id/stats
-// @access  Private
+
 export const getProjectStats = async (
     req: AuthRequest,
     res: Response,

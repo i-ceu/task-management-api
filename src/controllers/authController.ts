@@ -101,9 +101,7 @@ export const login = async (
     }
 };
 
-// @desc    Get current logged in user
-// @route   GET /api/auth/me
-// @access  Private
+
 export const getMe = async (
     req: AuthRequest,
     res: Response,
@@ -129,9 +127,7 @@ export const getMe = async (
     }
 };
 
-// @desc    Update user details
-// @route   PUT /api/auth/updatedetails
-// @access  Private
+
 export const updateDetails = async (
     req: AuthRequest,
     res: Response,
@@ -158,9 +154,7 @@ export const updateDetails = async (
     }
 };
 
-// @desc    Update password
-// @route   PUT /api/auth/updatepassword
-// @access  Private
+
 export const updatePassword = async (
     req: AuthRequest,
     res: Response,

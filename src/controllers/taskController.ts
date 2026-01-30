@@ -4,9 +4,7 @@ import Project from '../models/Project';
 import { ErrorHandler } from '../middleware/errorHandler';
 import { AuthRequest } from '../middleware/auth';
 
-// @desc    Get all tasks
-// @route   GET /api/tasks
-// @access  Private
+
 export const getTasks = async (
     req: AuthRequest,
     res: Response,
@@ -86,9 +84,7 @@ export const getTasks = async (
     }
 };
 
-// @desc    Get single task
-// @route   GET /api/tasks/:id
-// @access  Private
+
 export const getTask = async (
     req: AuthRequest,
     res: Response,
@@ -123,9 +119,7 @@ export const getTask = async (
     }
 };
 
-// @desc    Create new task
-// @route   POST /api/tasks
-// @access  Private
+
 export const createTask = async (
     req: AuthRequest,
     res: Response,
@@ -165,9 +159,7 @@ export const createTask = async (
     }
 };
 
-// @desc    Update task
-// @route   PUT /api/tasks/:id
-// @access  Private
+
 export const updateTask = async (
     req: AuthRequest,
     res: Response,
@@ -207,9 +199,7 @@ export const updateTask = async (
     }
 };
 
-// @desc    Delete task
-// @route   DELETE /api/tasks/:id
-// @access  Private
+
 export const deleteTask = async (
     req: AuthRequest,
     res: Response,
@@ -244,9 +234,7 @@ export const deleteTask = async (
     }
 };
 
-// @desc    Get tasks assigned to current user
-// @route   GET /api/tasks/my-tasks
-// @access  Private
+
 export const getMyTasks = async (
     req: AuthRequest,
     res: Response,
